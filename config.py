@@ -1,4 +1,5 @@
 
+
 import boto3
 from botocore.exceptions import ClientError
 import json
@@ -36,4 +37,5 @@ credentials = get_secret()
 AWS_ACCESS_KEY_ID = credentials.get("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = credentials.get("AWS_SECRET_ACCESS_KEY")
 AWS_REGION = credentials.get("AWS_REGION", boto3.session.Session().region_name or "us-east-2")
+
 
